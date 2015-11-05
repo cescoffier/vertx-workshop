@@ -16,7 +16,7 @@ The _vert2go_ application is a recommendation application where users can rates 
 
 The slides are available on: http://devoxx0workshop0slides-vertxdemos.rhcloud.com/#/
 
-**Prerequisites:
+**Prerequisites:**
 
 * Java 8 (JDK)
 * Git
