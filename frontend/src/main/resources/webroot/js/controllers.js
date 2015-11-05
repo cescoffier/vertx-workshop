@@ -7,7 +7,7 @@ app.controller('POIListController', function ($scope, $http) {
   // TODO Configuration:
   // Change here if you are using the docker-machine: http:////192.168.99.100:8000
   // Change here if you are using localhost: http://localhost:8000
-  var proxyURL = "http:////192.168.99.100:8000";
+  var proxyURL = "http://localhost:8000";
 
   // TODO Change recommendation service address to your own
   var recommendationServiceAddress = "devoxx.recommendations";
