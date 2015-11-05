@@ -1,0 +1,4 @@
+{
+  "hawkular.host": "localhost",
+  "hawkular.port": 8090
+}

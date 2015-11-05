@@ -1,0 +1,26 @@
+= Cheatsheets
+
+[[Place]]
+== Place
+
+++++
+ The place structure.
+
+ It's a data object that can be serialized to JSON (and built from JSON). Data objects can be used in event bus
+ proxies.
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[address]]`address`|`String`|-
+|[[category]]`category`|`String`|-
+|[[description]]`description`|`String`|-
+|[[latitude]]`latitude`|`Number (double)`|-
+|[[longitude]]`longitude`|`Number (double)`|-
+|[[name]]`name`|`String`|-
+|[[tags]]`tags`|`Array of String`|-
+|===
+
