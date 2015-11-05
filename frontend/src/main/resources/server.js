@@ -1,7 +1,7 @@
 var Router = require('vertx-web-js/router');
 var SockJSHandler = require('vertx-web-js/sock_js_handler');
 var StaticHandler = require('vertx-web-js/static_handler');
-var DataStorageService = require('devoxx-workshop-js/data_storage_service');
+var DataStorageService = require('vertx-microservice-workshop-js/data_storage_service');
 
 // create a http router
 var router = Router.router(vertx);
