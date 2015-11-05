@@ -32,9 +32,18 @@ public class DataStorageServiceImpl implements DataStorageService {
 
   @Override
   public void getAllPlaces(Handler<AsyncResult<List<Place>>> resultHandler) {
-    /**
-     * TODO to implement.
-     */
+    mongo.find(COLLECTION,
+        new JsonObject(),
+        ar -> {
+          if (ar.failed()) {
+            resultHandler.handle(Future.failedFuture(ar.cause()));
+          } else {
+            List<Place> places = ar.result().stream()
+                .map(Place::new).collect(Collectors.toList());
+            resultHandler.handle(Future.succeededFuture(places));
+          }
+        }
+    );
   }
 
   public void getPlacesForCategory(String category,
@@ -56,16 +65,29 @@ public class DataStorageServiceImpl implements DataStorageService {
 
   @Override
   public void getPlacesForTag(String tag, Handler<AsyncResult<List<Place>>> resultHandler) {
-    /**
-     * TODO to implement.
-     */
+    mongo.find(COLLECTION,
+        new JsonObject().put("tag", tag),
+        ar -> {
+          if (ar.failed()) {
+            resultHandler.handle(Future.failedFuture(ar.cause()));
+          } else {
+            List<Place> places = ar.result().stream()
+                .map(Place::new).collect(Collectors.toList());
+            resultHandler.handle(Future.succeededFuture(places));
+          }
+        }
+    );
   }
 
   @Override
   public void addPlace(Place place, Handler<AsyncResult<Void>> resultHandler) {
-    /**
-     * TODO to implement.
-     */
+    mongo.insert(COLLECTION, place.toJson(), s -> {
+      if (s.failed()) {
+        resultHandler.handle(Future.failedFuture(s.cause()));
+      } else {
+        resultHandler.handle(Future.succeededFuture());
+      }
+    });
   }
 
   public void close() {
