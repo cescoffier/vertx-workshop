@@ -11,6 +11,7 @@
   </parent>
 
   <artifactId>recommendation-service</artifactId>
+  <name>Recommendation Service</name>
 
   <properties>
     <main.verticle>io.vertx.workshop.recommendation.impl.RecommendationVerticle</main.verticle>

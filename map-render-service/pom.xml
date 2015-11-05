@@ -12,6 +12,7 @@
   </parent>
 
   <artifactId>map-render-service</artifactId>
+  <name>Map Render Service</name>
 
   <properties>
     <main.verticle>io.vertx.workshop.map.render.WebMapRenderVerticle</main.verticle>

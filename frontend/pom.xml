@@ -11,7 +11,7 @@
   </parent>
 
   <artifactId>frontend</artifactId>
-  <name>frontend-application</name>
+  <name>vert2go - Frontend</name>
 
   <properties>
     <main.verticle>server.js</main.verticle>

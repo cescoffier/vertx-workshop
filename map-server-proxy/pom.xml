@@ -12,6 +12,7 @@
   </parent>
 
   <artifactId>map-server-proxy</artifactId>
+  <name>Map Render Service - Proxy</name>
 
   <properties>
     <main.verticle>io.vertx.workshop.map.server.MapServerVerticle</main.verticle>

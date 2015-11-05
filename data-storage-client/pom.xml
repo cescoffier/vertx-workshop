@@ -11,6 +11,7 @@
   </parent>
 
   <artifactId>data-storage-client</artifactId>
+  <name>Data Storage Client</name>
 
   <properties>
     <main.verticle>Client.groovy</main.verticle>

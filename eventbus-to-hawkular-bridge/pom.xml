@@ -11,6 +11,7 @@
   </parent>
 
   <artifactId>eventbus-to-hawkular-bridge</artifactId>
+  <name>Eventbus to Hawkular bridge</name>
 
   <properties>
     <main.verticle>io.vertx.workshop.hawkular.HawkularBridge</main.verticle>
