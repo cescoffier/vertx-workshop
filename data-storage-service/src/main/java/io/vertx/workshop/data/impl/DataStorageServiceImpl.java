@@ -32,6 +32,7 @@ public class DataStorageServiceImpl implements DataStorageService {
 
   @Override
   public void getAllPlaces(Handler<AsyncResult<List<Place>>> resultHandler) {
+    LOGGER.info("Retrieving all the places");
     mongo.find(COLLECTION,
         new JsonObject(),
         ar -> {
@@ -40,6 +41,7 @@ public class DataStorageServiceImpl implements DataStorageService {
           } else {
             List<Place> places = ar.result().stream()
                 .map(Place::new).collect(Collectors.toList());
+            LOGGER.info(places.size() + " places have been retrieved");
             resultHandler.handle(Future.succeededFuture(places));
           }
         }
