@@ -25,4 +25,31 @@ The slides are available on: http://devoxx0workshop0slides-vertxdemos.rhcloud.co
 * An IDE
 
 
+## Using the provided virtual box image
+
+We provide a virtual box image with everything you need on it.
+ 
+1. Install Oracle virtual box from https://www.virtualbox.org/wiki/Downloads. Installation details are on https://www.virtualbox.org/manual/ch02.html
+2. Retrieve the virtual box image (`vertx-workshop.ova`).
+3. Open virtual box and import the _appliance_ (File -> Import Appliance)
+4. Select the `vertx-workshop.ova` file and click on import on the next screen
+5. Wait....
+6. Start the virtual machine by selecting it and then clic on the _Start_ button (green arrow)
+  
+## Using docker machine
+
+Docker runs natively on Linux. Because the Docker daemon uses Linux-specific kernel features, you can’t run Docker 
+natively in OS X or Windows. Instead, you must use docker-machine to create and attach to a virtual machine (VM). This
+ machine is a Linux VM that hosts Docker for you on your Mac or Windows. If you are on Mac OS X or Windows, you can use 
+ docker via docker machine (https://docs.docker.com/machine/).
+
+1. Install docker and docker-machine from https://www.docker.com/docker-toolbox. Installation instructions are there: http://docs.docker.com/mac/step_one/
+2. Once done run `docker run hello-world` to verify your installation 
+  
+The installation process will create a VM that has a minimal linux to run docker.
+  
+  
+
+
+
 
