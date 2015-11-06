@@ -23,6 +23,7 @@ The slides are available on: http://devoxx0workshop0slides-vertxdemos.rhcloud.co
 * Apache Maven
 * Docker (or docker-machine)
 * An IDE
+* RoboMongo (optional)
 
 
 ## Using the provided virtual box image
