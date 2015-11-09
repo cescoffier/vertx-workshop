@@ -49,6 +49,7 @@
     <!-- TODO Change this to your IP -->
     <interfaces enabled="true">
       <interface>192.168.1.*</interface>
+      <interface>10.0.0.*</interface>
     </interfaces>
 
     <ssl enabled="false"/>
