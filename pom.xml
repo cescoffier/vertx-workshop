@@ -36,6 +36,18 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <!-- Used to send log messages to GELF server -->
+        <groupId>biz.paluch.logging</groupId>
+        <artifactId>logstash-gelf</artifactId>
+        <version>1.7.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -52,18 +64,6 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-codegen</artifactId>
-    </dependency>
-    <dependency>
-      <!-- Used to send log messages to GELF server -->
-      <groupId>biz.paluch.logging</groupId>
-      <artifactId>logstash-gelf</artifactId>
-      <version>1.7.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
 

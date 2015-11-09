@@ -35,6 +35,12 @@
       <groupId>io.vertx</groupId>
       <artifactId>vertx-lang-js</artifactId>
     </dependency>
+
+    <!-- Dependency used for GELF -->
+    <!--<dependency>-->
+      <!--<groupId>biz.paluch.logging</groupId>-->
+      <!--<artifactId>logstash-gelf</artifactId>-->
+    <!--</dependency>-->
   </dependencies>
 
   <build>
