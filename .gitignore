@@ -14,6 +14,7 @@ buildNumber.properties
 .project
 
 # IntelliJ
+.idea
 *.iml
 
 # vert.x
